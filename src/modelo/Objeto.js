@@ -1,0 +1,28 @@
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/banco');
+
+const Objeto = sequelize.define('Objeto', {
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    primaryKey: true
+  },
+  descricao: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  data_encontrado: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  id_local: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  id_categoria: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  }
+})
+
+module.exports = Objeto;

@@ -1,0 +1,2 @@
+Dia 14/11/2026 - SEMANA 1
+Fiz o projeto DER, projeto lógico e comecei o banco de dados. Não tinha certeza se estava certo o DER. Pedi uma revisão a IA, mas sem pedir a resposta(mais detalhes em USO_DE_IA.md). Checar mais profundamente o DER, lógico e Banco de Dados em geral 
