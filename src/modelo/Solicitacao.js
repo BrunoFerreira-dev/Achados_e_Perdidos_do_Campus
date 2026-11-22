@@ -8,11 +8,19 @@ const Solicitacao = sequelize.define('Solicitacao', {
   },
   CPF_usuario: {
     type: DataTypes.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    references: {
+      model: 'Usuario',
+      key: 'CPF'
+    }
   },
   id_objeto: {
     type: DataTypes.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    references: {
+      model: 'Objeto',
+      key: 'id'
+    }
   },
   descricao_caracteris: {
     type: DataTypes.STRING,

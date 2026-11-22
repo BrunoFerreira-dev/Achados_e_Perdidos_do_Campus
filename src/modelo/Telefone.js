@@ -9,7 +9,11 @@ const Telefone = sequelize.define('Telefone', {
   },
   CPF_usuario: {
     type: DataTypes.INTEGER,
-    allowNull: false
+    allowNull: false,
+    references: {
+      model: 'Usuario',
+      key: 'CPF'
+    }
   },
   telefone: {
     type: DataTypes.INTEGER,
