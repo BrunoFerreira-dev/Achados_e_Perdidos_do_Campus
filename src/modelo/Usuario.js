@@ -34,7 +34,8 @@ const Usuario = sequelize.define('Usuario', {
     data_nasc: {
         type: DataTypes.DATE,
         allowNull: false
-    },
+    }
+},{
     hooks: {
     beforeCreate: async (Usuario) => {
       if (Usuario.senha) {
@@ -47,7 +48,7 @@ const Usuario = sequelize.define('Usuario', {
         const salt = await bcrypt.genSalt(10);
         Usuario.senha = await bcrypt.hash(Usuario.senha, salt);
       }
-    },
+    }
   }
 })
 Usuario.prototype.validPassword = async function(senha) {

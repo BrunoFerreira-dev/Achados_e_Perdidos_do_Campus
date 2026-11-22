@@ -17,11 +17,19 @@ const Objeto = sequelize.define('Objeto', {
   },
   id_local: {
     type: DataTypes.INTEGER,
-    allowNull: false
+    allowNull: false,
+    references: {
+      model: 'Local',
+      key: 'id'
+    }
   },
   id_categoria: {
     type: DataTypes.INTEGER,
-    allowNull: false
+    allowNull: false,
+    references: {
+      model: 'Categoria',
+      key: 'id'
+    }
   }
 })
 
