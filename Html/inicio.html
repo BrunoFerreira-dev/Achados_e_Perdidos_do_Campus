@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Objeto </title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Achados e Perdidos</h2>
+      <nav>
+        <a href="#" class="ativo">Cadastrar objeto</a>
+        <a href="#">Objetos</a>
+        <a href="#">Solicitações</a>
+      </nav>
+    </aside>
+
+    <main class="conteudo">
+      <h1>Cadastrar objeto</h1>
+
+      <form action="#" method="post" enctype="multipart/form-data" class="card">
+        <div class="linha-dupla">
+          <div class="campo">
+            <label for="categoria_id">Categoria *</label>
+            <select id="categoria_id" name="categoria_id" required>
+              <option value="" disabled selected>Selecione...</option>
+              <option value="1">Eletrônicos</option>
+              <option value="2">Documentos</option>
+              <option value="3">Roupas e Acessórios</option>
+              <option value="4">Chaves</option>
+              <option value="5">Outros</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="data">Data *</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+        </div>
+
+        <div class="linha-dupla">
+          <div class="campo">
+            <label for="local_nome">Local onde foi achado *</label>
+            <input type="text" id="local_nome" name="local_nome" required placeholder="Ex: Biblioteca">
+          </div>
+
+          <div class="campo">
+            <label for="local_endereco">Endereço </label>
+            <input type="text" id="local_endereco" name="local_endereco" placeholder="Ex: Bloco 2 do lado do joão careca" >
+          </div>
+        </div>
+
+        <fieldset class="etiqueta-box">
+          <legend>Etiqueta </legend>
+
+          <div class="linha-tripla">
+            <div class="campo">
+              <label for="etiqueta_cor">Cor *</label>
+              <input type="text" id="etiqueta_cor" name="etiqueta_cor" required placeholder="Ex: Preto">
+            </div>
+
+            <div class="campo">
+              <label for="etiqueta_marca">Marca</label>
+              <input type="text" id="etiqueta_marca" name="etiqueta_marca" placeholder="Ex: Nike">
+            </div>
+
+            <div class="campo">
+              <label for="etiqueta_material">Material</label>
+              <input type="text" id="etiqueta_material" name="etiqueta_material" placeholder="Ex: Plástico / Tecido">
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <label for="descricao">Descrição do objeto *</label>
+          <textarea id="descricao" name="descricao" rows="3" required placeholder="Detalhes adicionais do objeto encontrado..."></textarea>
+        </div>
+
+        <div class="campo">
+          <label for="foto">Foto</label>
+          <input type="file" id="foto" name="foto" accept="image/*">
+        </div>
+
+        <button type="submit">Salvar objeto</button>
+      </form>
+    </main>
+  </div>
+
+</body>
+</html>
