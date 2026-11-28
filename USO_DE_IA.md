@@ -33,10 +33,3 @@ FINALIDADE: Funcionamento de chaves estrangeiras no sequelize
 PERGUNTAS: "Como funciona as chaves estrangeiras no sequelize?"
 APROVEITAMENTO: Ele falou sobre hasMany, BelongsToMany, onDelete e onUpdate. Basicamente o que eu já sabia, mas eu não
 lembrava, quando ele disse eu lembrei e fui pesquisar no site do Sequelize mais profundamente
-///////////////////////////////////////////////////////////////
-DATA: 21/11/2026
-INTEGRANTE: Bruno Ferreira 
-FERRAMENTA: ChatGPT 
-FINALIDADE: Olhar por erros no arquivo Usuario
-PERGUNTAS: "Onde está o erro desse codigo?"
-APROVEITAMENTO: Ele apontou o erro no codigo e agora e eu acho que consertei

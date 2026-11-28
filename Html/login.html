@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="Pt-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <title>Login-Achados e Perdidos</title>
+    <title>Login - Achados e Perdidos</title>
 </head>
 
 <body>
     <main class="container">
-        <form action="/login" method="POST">
+        <form id="form-login" action="/login" method="POST">
             <h1>Login</h1>
             <div class="input-box">
                 <input type="email" id="Usuario" name="Usuario" placeholder="Usuario" required>
@@ -33,6 +33,24 @@
             </div>
         </form>
     </main>
+
+    <script>
+        const formLogin = document.getElementById("form-login");
+
+        formLogin.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const usuario = document.getElementById("Usuário").value.trim();
+            const lembrar = document.getElementById("remember").checked;
+
+            const maxAge = lembrar ? "; max-age=604800" : "";
+
+            document.cookie = `usuario_logado=${encodeURIComponent(usuario)}${maxAge}; path=/; SameSite=Lax`;
+
+            // Altere "index.html" para o nome da página que abre após o login
+            window.location.href = "inicio.html";
+        });
+    </script>
 </body>
 
 </html>
