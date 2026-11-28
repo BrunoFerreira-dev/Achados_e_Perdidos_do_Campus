@@ -33,3 +33,10 @@ FINALIDADE: Funcionamento de chaves estrangeiras no sequelize
 PERGUNTAS: "Como funciona as chaves estrangeiras no sequelize?"
 APROVEITAMENTO: Ele falou sobre hasMany, BelongsToMany, onDelete e onUpdate. Basicamente o que eu já sabia, mas eu não
 lembrava, quando ele disse eu lembrei e fui pesquisar no site do Sequelize mais profundamente
+//////////////////////////////////////////////////////////////
+DATA: 23/11/2026
+INTEGRANTE: Wendel Gabriel
+FERRAMENTA: GEMINI
+FINALIDADE: AUXILIAR NA CRIAÇÃO DA TELA DE CADASTRO DE OBEJETOS
+PERGUNTAS: "ME AJUDE PASSO A PASSO A COMO FAZER A TELA DE CADASTRO DE OBJETOS COM BASE NO DER"
+APROVEITAMENTO: ele me ensinou passo a passo com funciona as tags para oque cada uma servia e não me deu o codigo ja pronto.
